@@ -9,6 +9,7 @@ const db = mysql.createConnection({
   database: process.env.DB_NAME,
 });
 
+//Function to start application
 async function runApp() {
   try {
     console.log("Employee Tracker Management System");
@@ -19,6 +20,7 @@ async function runApp() {
   }
 }
 
+// Function to start initial prompt and following prompts.
 async function runPrompt() {
   try {
     const { default: inquirer } = await import("inquirer");
